@@ -5,17 +5,24 @@ Programming Language: Kotlin
 
 ## Pre-requisites
 - JDK 17+
-- Docker
+- Docker or Podman + Podman Compose
 
 ## How to run
 This is the template project, so you can use it as a base for your project.
 
 1. Actually, you can start by running docker compose and start application
     ```shell
-    docker-compose up -d
+    docker compose up -d
     ```
+2. If you work with podman, you can use podman compose
+   ```shell
+   podman image pull confluentinc/cp-zookeeper:6.0.14
+   podman image pull confluentinc/cp-kafka:6.0.14
+   podman image pull provectuslabs/kafka-ui
    
-2. Run application
+   podman-compose up -d
+   ``` 
+3. Run application
     ```shell
     ./gradlew bootRun
     ```
