@@ -2,6 +2,9 @@ spring:
   application:
     name: kafka-project-template
 
+  threads:
+    virtual:
+      enabled: true
 
 communication-channel:
   kafka:
