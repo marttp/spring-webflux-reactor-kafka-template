@@ -4,7 +4,7 @@ Spring WebFlux template project contains Reactor Kafka sample setup with Testcon
 Programming Language: Kotlin
 
 ## Pre-requisites
-- JDK 17+
+- JDK 21+
 - Docker or Podman + Podman Compose
 
 ## How to run
